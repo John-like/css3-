@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            background: #000000;
+            perspective: 2000px;
+        }
+        #pics{
+		border:1px solid red;
+            width: 300px;
+            height: 400px;
+            position: relative;
+            margin:150px auto;
+            transform-style: preserve-3d;
+            animation: myframes 10s infinite;
+        }
+        #pics div{
+            position: absolute;
+            border:10px solid gray;
+            left:60px;
+            top:70px;
+            width:160px;
+            height:240px;
+            background-size: cover;
+        }
+        #pics div:nth-child(1){
+            background-image: url(img/angelababy.jpg);
+            transform: rotateY(0deg) translateZ(500px);
+        }
+        #pics div:nth-child(2){
+            background-image: url(img/chenhao.jpg);
+            transform: rotateY(30deg) translateZ(500px);
+        }
+        #pics div:nth-child(3){
+            background-image: url(img/fanbingbing.jpg);
+            transform: rotateY(60deg) translateZ(500px);
+        }
+        #pics div:nth-child(4){
+            background-image: url(img/gaoyuanyuan.jpg);
+            transform: rotateY(90deg) translateZ(500px);
+        }
+        #pics div:nth-child(5){
+            background-image: url(img/liushishi.jpg);
+            transform: rotateY(120deg) translateZ(500px);
+        }
+        #pics div:nth-child(6){
+            background-image: url(img/liutao.jpg);
+            transform: rotateY(150deg) translateZ(500px);
+        }
+        #pics div:nth-child(7){
+            background-image: url(img/liuyifei.jpg);
+            transform: rotateY(180deg) translateZ(500px);
+        }
+        #pics div:nth-child(8){
+            background-image: url(img/tongliya.jpg);
+            transform: rotateY(210deg) translateZ(500px);
+        }
+        #pics div:nth-child(9){
+            background-image: url(img/yangmi.jpg);
+            transform: rotateY(240deg) translateZ(500px);
+        }
+        #pics div:nth-child(10){
+            background-image: url(img/yangzi.jpg);
+            transform: rotateY(270deg) translateZ(500px);
+        }
+        #pics div:nth-child(11){
+            background-image: url(img/zhangxinyi.jpg);
+            transform: rotateY(300deg) translateZ(500px);
+        }
+        #pics div:nth-child(12){
+            background-image: url(img/zhaoliying.jpg);
+            transform: rotateY(330deg) translateZ(500px);
+        }
+        @keyframes myframes {
+            from{
+                transform: rotateX(10deg) rotateY(0deg);
+            }
+            50%{
+                transform: rotateX(-10deg) rotateY(180deg);
+            }
+            to{
+                transform: rotateX(10deg) rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="pics">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+</body>
+</html>
